@@ -1,3 +1,4 @@
+# Protocol Analysis Pipeline
 This repository contains a pipeline for analyzing Knesset protocols, focusing on identifying and processing parliamentary discourse.
 
 ## Pipeline Steps
