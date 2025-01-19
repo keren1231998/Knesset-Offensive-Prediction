@@ -48,16 +48,6 @@ class Preprocessing:
         measure string similarity and groups committees with distance < 0.3.
         
         The method modifies the 'committee_name' column in self.data directly.
-        
-        Process:
-        1. Identifies unique committee names containing 'ועד'
-        2. Calculates Levenshtein distance between all committee pairs
-        3. Groups similar committees together
-        4. Updates committee names to use a standardized version
-        
-        Note:
-            The threshold for considering committees similar is set to 0.3
-            (normalized Levenshtein distance).
         """
         committees = self.data['committee_name'].unique()
         committees = [c for c in committees if 'ועד' in c]
@@ -99,18 +89,6 @@ class Preprocessing:
         1. Using DICTA-BERT NER model to identify speakers in the text
         2. Splitting the conversation at speaker transitions
         3. Creating new rows in the dataset for each speaker segment
-        
-        The method modifies self.data directly by:
-        - Removing original long conversations
-        - Adding new rows with split conversations
-        
-        Technical details:
-        - Uses the dicta-il/dictabert-ner model for Named Entity Recognition
-        - Removes common Hebrew chairperson titles (יו"ר, יור, היו"ר)
-        - Preserves session context (committee_name, session_id, etc.)
-        
-        Note:
-            The threshold for long conversations is set to 40 words.
         """
         oracle = pipeline('ner', model='dicta-il/dictabert-ner', aggregation_strategy='simple')
         oracle.tokenizer.backend_tokenizer.decoder = WordPiece()
