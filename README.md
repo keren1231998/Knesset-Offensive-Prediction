@@ -28,3 +28,22 @@ This script:
 
 ![image](https://github.com/user-attachments/assets/0821ad0d-2b0d-4fad-93ac-3a453f96b50b)
 
+### Step 3: Data Heuristics
+The heuristic analysis consists of two main components:
+
+#### 3.1 Protocol Filtering (`filter_heuristics.py`)
+```bash
+python filter_heuristics.py
+```
+
+Implements filtering based on:
+- Call to Order Detection (קריאה לסדר)
+- Interruption Analysis (- - -)
+- Procedural warnings
+
+#### 3.2 Offensive Language Detection (`offensive_words_detector.py`)
+```bash
+python offensive_words_detector.py
+```
+Provides comprehensive offensive language analysis:
+- Outputs enhanced dataset with offensive language annotations
