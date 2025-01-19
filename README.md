@@ -23,7 +23,5 @@ python preprocessing.py
 ```
 
 This script:
-- Unifies committee names using Levenshtein distance
-- Splits long conversations into manageable segments
-- Processes speaker information using DICTA-BERT NER
-- Saves preprocessed data to specified output path
+
+![image](https://github.com/user-attachments/assets/217ee9f6-2e9e-42fa-a98e-37dd2213b072)
