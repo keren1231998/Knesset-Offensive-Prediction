@@ -16,31 +16,6 @@ class Preprocessing:
     - Unifying committee names using Levenshtein distance
     - Splitting long conversations into smaller, manageable segments
     - Cleaning and structuring conversation data
-    
-    Attributes:
-        data_path (str): Path to the input data file
-        save_path (str): Path where processed data will be saved
-        data (pandas.DataFrame): DataFrame containing the processed data with columns:
-            - committee_name: Name of the parliamentary committee
-            - session_id: Unique identifier for each session
-            - chairperson: Name of the committee chairperson
-            - speaker_name: Name of the current speaker
-            - conversation: Content of the speech/conversation
-    
-    Args:
-        data_path (str): Path to the input data file
-        save_path (str): Path where processed data will be saved
-        base_path (str, optional): Base directory path. Defaults to empty string.
-        filter_data (bool, optional): Whether to filter the data. Defaults to True.
-        create_new (bool, optional): Whether to create new processed data even if saved data exists. 
-            Defaults to False.
-    
-    Example:
-        >>> preprocessor = Preprocessing(
-        ...     data_path='raw_data.csv',
-        ...     save_path='processed_data.csv',
-        ...     base_path='/data'
-        ... )
     """
 
     def __init__(self, data_path, save_path, base_path="", filter_data=True, create_new=False):
