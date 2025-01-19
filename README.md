@@ -17,6 +17,7 @@ This script:
 - Handles Hebrew text encoding (UTF-8-sig)
 
 ### Step 2: Protocol Preprocessing (`preprocessing.py`)
+credit to https://github.com/nogaschw/Call-to-order/tree/main
 After collecting the protocols, we preprocess them to ensure data quality and consistency:
 
 ```bash
@@ -25,4 +26,4 @@ python preprocessing.py
 
 This script:
 
-![image](https://github.com/user-attachments/assets/217ee9f6-2e9e-42fa-a98e-37dd2213b072)
+![image](https://github.com/user-attachments/assets/0821ad0d-2b0d-4fad-93ac-3a453f96b50b)
