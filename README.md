@@ -1,4 +1,4 @@
-# Protocol Analysis Pipeline
+# Harmfull Prediction for Knesset Protocols
 This repository contains a pipeline for analyzing Knesset protocols, focusing on identifying and processing parliamentary discourse.
 
 ## Pipeline Steps
