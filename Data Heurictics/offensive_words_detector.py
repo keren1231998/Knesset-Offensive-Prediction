@@ -2,17 +2,8 @@ import pandas as pd
 import re
 import os
 
-def process_offensive_words(batch_numbers):
-    """
-    Process multiple batch files to detect offensive words in conversations.
-    
-    Args:
-        batch_numbers (list): List of batch numbers to process
-        
-    Returns:
-        None: Saves processed files to the specified output directory
-    """
-    
+def process_offensive_words(input_path,output_path):
+
     # Define offensive words list
     offensive_words = ["אהצבועה", "אובססיבית", "איכס", "אינעל", "שמוק", "דביל", "בולבול", 
                       "קפוץ לי", "אנטיפתי", "אסתור", "בביצים", "בגועליציה", "בגזענותו",
@@ -72,7 +63,6 @@ def process_offensive_words(batch_numbers):
     for batch_num in batch_numbers:
         try:
             # Read the input file
-            input_path = f"NLP-PROJECT/Pre_Process/Pre_Process/batch_{batch_num}_processed_data.csv"
             data = pd.read_csv(input_path)
             
             # Select required columns
@@ -90,10 +80,8 @@ def process_offensive_words(batch_numbers):
                 lambda x: ', '.join(find_offensive_words_regex(x)))
             
             # Save processed data
-            output_path = f'NLP-PROJECT/Pre_Process/Data Heuristics/Data/Harmful/batch_{batch_num}_cut_call.csv'
             data.to_csv(output_path, index=False)
             
-            print(f"Successfully processed batch {batch_num}")
             
         except Exception as e:
             print(f"Error processing batch {batch_num}: {str(e)}")
