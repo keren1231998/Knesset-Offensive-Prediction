@@ -6,7 +6,7 @@ First, we collect and filter the relevant protocols from the Knesset's official 
 
 This script:
 - Scrapes protocols from the oknesset.org website
-- Filters protocols 
+- Filters relevant protocols 
 - Saves filtered protocols to the `text/` directory
 
 ### Step 2: Protocol Preprocessing (`preprocessing.ipynb`)
