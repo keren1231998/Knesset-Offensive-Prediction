@@ -26,9 +26,9 @@ Implements filtering based on:
 - Interruption Analysis (- - -)
 
 
-#### 3.2 Offensive Language Detection (`offensive_words_detector.ipynb`)
+#### 3.2 Offensive Language Filt (`offensive_words_detector.ipynb`)
 Provides comprehensive offensive language analysis:
-- Outputs enhanced dataset with offensive language annotations
+- Outputs dataset with offensive language annotations
 
 ### Step 4: Classification
 #### 4.1 DictaLM Analysis (Call_Cut_Dicta.ipynb)
