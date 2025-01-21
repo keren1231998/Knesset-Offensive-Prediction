@@ -1,5 +1,7 @@
-# Harmfull Prediction for Knesset Protocols
-This repository contains a pipeline for analyzing Knesset protocols, focusing on identifying and processing parliamentary discourse.
+## Knesset Protocol Analysis Pipeline
+A comprehensive framework for analyzing Israeli parliamentary discourse through Knesset protocols, with a focus on detecting procedural disruptions and harmful language patterns.
+## Overview
+This pipeline processes Knesset protocols through multiple stages, from data collection to advanced language analysis. It leverages both rule-based heuristics and machine learning approaches to identify various forms of parliamentary disruptions and problematic discourse.
 
 ## Pipeline Steps
 
