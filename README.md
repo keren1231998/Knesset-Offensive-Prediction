@@ -3,25 +3,17 @@ This repository contains a pipeline for analyzing Knesset protocols, focusing on
 
 ## Pipeline Steps
 
-### Step 1: Protocol Collection (`get_protocols.py`)
+### Step 1: Protocol Collection (`get_protocols.ipynb`)
 First, we collect and filter the relevant protocols from the Knesset's official repository:
-
-```
-python get_protocols.py
-```
 
 This script:
 - Scrapes protocols from the oknesset.org website
 - Filters protocols 
 - Saves filtered protocols to the `text/` directory
 
-### Step 2: Protocol Preprocessing (`preprocessing.py`)
+### Step 2: Protocol Preprocessing (`preprocessing.ipynb`)
 After collecting the protocols, we preprocess them to ensure data quality and consistency:
 credit to https://github.com/nogaschw/Call-to-order/tree/main
-
-```bash
-python preprocessing.py
-```
 
 This script:
 
@@ -30,19 +22,12 @@ This script:
 ### Step 3: Data Heuristics
 The heuristic analysis consists of two main components:
 
-#### 3.1 Protocol Filtering (`filter_heuristics.py`)
-```bash
-python filter_heuristics.py
-```
-
+#### 3.1 Protocol Filtering (`filter_heuristics.ipynb`)
 Implements filtering based on:
 - Call to Order Detection (קריאה לסדר)
 - Interruption Analysis (- - -)
-- Procedural warnings
 
-#### 3.2 Offensive Language Detection (`offensive_words_detector.py`)
-```bash
-python offensive_words_detector.py
-```
+
+#### 3.2 Offensive Language Detection (`offensive_words_detector.ipynb`)
 Provides comprehensive offensive language analysis:
 - Outputs enhanced dataset with offensive language annotations
