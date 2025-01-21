@@ -12,9 +12,8 @@ python get_protocols.py
 
 This script:
 - Scrapes protocols from the oknesset.org website
-- Filters protocols containing calls to order or harmful language
+- Filters protocols 
 - Saves filtered protocols to the `text/` directory
-- Handles Hebrew text encoding (UTF-8-sig)
 
 ### Step 2: Protocol Preprocessing (`preprocessing.py`)
 After collecting the protocols, we preprocess them to ensure data quality and consistency:
