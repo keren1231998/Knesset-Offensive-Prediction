@@ -31,3 +31,10 @@ Implements filtering based on:
 #### 3.2 Offensive Language Detection (`offensive_words_detector.ipynb`)
 Provides comprehensive offensive language analysis:
 - Outputs enhanced dataset with offensive language annotations
+
+### Step 4: Classification
+#### 4.1 DictaLM Analysis (Call_Cut_Dicta.ipynb)
+- Utilizes DictaLM 2.0 Hebrew language model
+Processes two types of classifications:
+1. Procedural disruptions (with window=3 radius)
+2. Harmful language instances
