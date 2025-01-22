@@ -1,4 +1,5 @@
-How does party affiliation influence the use of confrontational versus cooperative language in verbal exchanges between Knesset members during parliamentary debates?
+# Reasearch Question:
+How party affiliation affects the tone of discourse and interactions between Knesset members in debates?
 
 ## Pipeline Steps
 
