@@ -19,3 +19,8 @@ This script:
 
 ![image](https://github.com/user-attachments/assets/0821ad0d-2b0d-4fad-93ac-3a453f96b50b)
 
+### Step 3: Data Heuristic for Offensive Language  
+The script applies a data heuristic with three distinct patterns to identify relevant interactions within Knesset protocols.  
+1. The first filter flags suspected offensive language using a Hebrew lexicon [Chaya Liebeskind et al., 2023].  
+2. The second filter detects formal parliamentary order calls and interruptions.  
+3. For both order calls and interruptions, the script retains the surrounding conversational context within a radius of three interactions.  
