@@ -24,3 +24,6 @@ The script applies a data heuristic with three distinct patterns to identify rel
 1. The first filter flags suspected offensive language using a Hebrew lexicon [Chaya Liebeskind et al., 2023].  
 2. The second filter detects formal parliamentary order calls and interruptions.  
 3. For both order calls and interruptions, the script retains the surrounding conversational context within a radius of three interactions.  
+
+## Step 4: Classification
+![image](https://github.com/user-attachments/assets/1caf59b7-7416-4959-96c5-ad76354207a2)
