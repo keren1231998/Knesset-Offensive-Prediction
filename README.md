@@ -1,5 +1,5 @@
 # Reasearch Question:
-How party affiliation affects the tone of discourse and interactions between Knesset members in debates?
+How accurately can machine learning models predict harmful language in Knesset protocols before it occurs? 
 
 ## Pipeline Steps
 
