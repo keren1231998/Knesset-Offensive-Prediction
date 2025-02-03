@@ -86,7 +86,7 @@ def process_conversations(df, tokenizer, model, device, output_path):
         return tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
 
     for index, row in df.iterrows():
-        if row['contains_calls_to_order'] == 1:
+        if row['contains_calls_to_order'] == 1 or row['contains_cut'] == 1:
             commite_num = row['session_id']
             index_2_check = [index-3, index-2, index-1, index, index+1, index+2, index+3]
 
