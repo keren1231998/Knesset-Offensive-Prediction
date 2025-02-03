@@ -26,4 +26,3 @@ The script applies a data heuristic with three distinct patterns to identify rel
 3. For the order calls, the script retains the surrounding conversational context within a radius of three interactions.  
 
 ## Step 4: Classification
-![image](https://github.com/user-attachments/assets/aca54f6a-5375-467b-b800-602adea2b1d6)
